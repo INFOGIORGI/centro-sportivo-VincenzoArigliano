@@ -40,7 +40,7 @@ public class CentroSportivo{
         return soci.get(codiceSocio);
     }
 
-    public boolean aggiungiIstruttore(String nome, String cognome, String codiceSocio){
+    public boolean aggiungiIstruttore(String nome, String cognome, String codiceIstruttore){
         if(istruttori.containsKey(codiceIstruttore)){
         return false;
         }
