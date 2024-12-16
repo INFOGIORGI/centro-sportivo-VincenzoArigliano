@@ -21,15 +21,17 @@ public class CentroSportivo{
     }
 
     public boolean aggiungiSocio(String nome, String cognome, String codiceSocio){
-        if(soci.containsKey(codiceSocio))
+        if(soci.containsKey(codiceSocio)){
         return false;
+        }
         soci.put(codiceSocio, new Socio(nome, cognome, codiceSocio));
         return true;
     }
 
     public boolean rimuoviSocio(String codiceSocio){
-        if(!soci.containsKey(codiceSocio))
+        if(!soci.containsKey(codiceSocio)){
         return false;
+        }
         soci.remove(codiceSocio);
         return true;
     }
@@ -39,15 +41,17 @@ public class CentroSportivo{
     }
 
     public boolean aggiungiIstruttore(String nome, String cognome, String codiceSocio){
-        if(istruttori.containsKey(codiceIstruttore))
+        if(istruttori.containsKey(codiceIstruttore)){
         return false;
+        }
         istruttori.put(codiceIstruttore, new Istruttore(nome, cognome, codiceIstruttore));
         return true;
     }
 
     public boolean rimuoviIstruttore(String codiceIstruttore){
-        if(!istruttori.containsKey(codiceSocio))
+        if(!istruttori.containsKey(codiceSocio)){
         return false;
+        }
         soci.remove(codiceIstruttore);
         return true;
     }
